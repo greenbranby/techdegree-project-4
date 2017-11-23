@@ -1,33 +1,51 @@
 /*----- Base Element Styles ------------*/
-*{
+html {
+  margin-bottom: 1px;
+  overflow: -moz-scrollbars-vertical !important;
+  overflow-y: scroll;
   box-sizing: border-box;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+input[type='text']{
+  border: 1pt solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  height: 50px;
+  width: 100%;
+  margin-top:20px;
+}
 
-body {
-  padding-right: 5%;
-  padding-left: 5%;
-  margin: auto;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.35em;
-  line-height: 1.6em;
-  color: #000;
-  background-color: #ffffff;
+
+form{
+margin-left: 25%;
+margin-right:25%;
+width: 50%;
+}
+
+.container {
+  margin: 0 auto;
   max-width: 1280px;
-}
-p{
-  font-size: .85em;
-  line-height: 1.5em;
-  padding:0px 30px;
-}
-
-h1,
-h2,
-h3,
-h4{
-    font-family: 'Bree Serif', serif;
+  padding: 0 1rem;
+  margin-bottom: 50px;
 }
 
 a {
-  color: #333;
   text-decoration: none;
+}
+/*---------------------------------
+Gallery Styles
+---------------------------------*/
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pic-grid {
+  flex-grow: 1;
+  margin: 50px;
 }
