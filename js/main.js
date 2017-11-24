@@ -11,6 +11,4 @@ $("#search").keyup(function(){
           $(this).show();
       }
   });
-
-
 });
