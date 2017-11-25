@@ -50,6 +50,12 @@ Gallery Styles
   flex-grow: 1;
   margin: 40px 30px 30px 30px;
 }
+
+.lightbox .lb-image {
+  /* Image border */
+  border: 2px solid white;
+}
+
 /*---------------------------------
 Media Queries
 ---------------------------------*/
