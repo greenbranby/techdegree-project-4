@@ -19,7 +19,6 @@ input[type='text']{
   margin-top:20px;
 }
 
-
 .searchbox {
   margin: 0 auto;
   margin-top: 15px;
@@ -31,7 +30,7 @@ a {
   text-decoration: none;
 }
 
-img {
+.pic-grid img {
   margin:30px;
 }
 
@@ -56,10 +55,14 @@ Gallery Styles
   margin: auto;
 }
 
+/*---------------------------------
+Lightbox Styles
+---------------------------------*/
+
 .lightbox .lb-image {
-  /* Image border */
   border: 2px solid white;
 }
+
 
 /*---------------------------------
 Media Queries
