@@ -6,8 +6,8 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+* {
+	box-sizing: border-box;
 }
 
 input[type='text']{
@@ -19,36 +19,41 @@ input[type='text']{
   margin-top:20px;
 }
 
-form{
-margin-left: 25%;
-margin-right:25%;
-margin-top: 20px;
-width: 50%;
-}
 
-.container {
+.searchbox {
   margin: 0 auto;
-  max-width: 1280px;
-  padding: 0 20px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 50%;
 }
 
 a {
   text-decoration: none;
 }
+
+img {
+  margin:30px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1280px;
+  min-height: 50vh;
+  width: 100%;
+}
+
 /*---------------------------------
 Gallery Styles
 ---------------------------------*/
-
-.gallery {
+.gallery{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin:auto;
 }
-
 .pic-grid {
-  flex-grow: 1;
-  margin: 40px 30px 30px 30px;
+  margin: auto;
 }
 
 .lightbox .lb-image {
@@ -60,13 +65,25 @@ Gallery Styles
 Media Queries
 ---------------------------------*/
 
-@media (max-width:500px){
+@media (max-width:768px){
 .container {
-  margin: auto 0;
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
 }
- form {
+.searchbox {
    width: 200px;
-   margin: 0 30px 0 30px;
+   margin: auto;
+   margin-bottom: 10px;
+   margin-top: 15px;
  }
+.pic-grid{
+  margin: auto;
+}
+ img {
+   margin-left: 0;
+   margin-right: 0;
+ }
+
 }
