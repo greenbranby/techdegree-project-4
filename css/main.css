@@ -1,4 +1,9 @@
 /*----- Base Element Styles ------------*/
+body {
+  font-family: 'Lato',sans-serif;
+  letter-spacing: 1px;
+}
+
 html {
   margin-bottom: 1px;
   overflow: -moz-scrollbars-vertical !important;
@@ -8,6 +13,29 @@ html {
 
 * {
 	box-sizing: border-box;
+}
+
+p {
+  font-size: 16px;
+  color: #71A6A1;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  padding-top: 60px;
+}
+
+header {
+  height: 200px;
+  background-color: #114B63;
 }
 
 input[type='text']{
@@ -24,10 +52,6 @@ input[type='text']{
   margin-top: 15px;
   margin-bottom: 10px;
   width: 50%;
-}
-
-a {
-  text-decoration: none;
 }
 
 .pic-grid img {
