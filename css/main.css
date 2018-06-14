@@ -56,6 +56,13 @@ input[type='text']{
 
 .pic-grid img {
   margin:20px;
+  border: 12px solid #E6F3F0;
+  transition: 0.3s;
+}
+
+.pic-grid img:hover {
+  margin:20px;
+  border: 12px solid #71A6A1;
 }
 
 .container {
